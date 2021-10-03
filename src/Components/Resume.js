@@ -19,10 +19,13 @@ const Resume = (props) => {
 				<div key={education.school}>
 					<h3>{education.school}</h3>
 					<p className='info'>
-						{education.degree} <span>&bull;</span>
-						<em className='date'>{education.graduated}</em>
+						{education.degree}
+						<br />
+						<span>&bull;</span>{' '}
+						<em className='date'>
+							{education.graduated} {education.description}
+						</em>
 					</p>
-					<p>{education.description}</p>
 				</div>
 			);
 		});
@@ -32,12 +35,12 @@ const Resume = (props) => {
 					<h3>{work.company}</h3>
 					<p className='info'>
 						{work.title}
+						<br />
 						<span>&bull;</span>{' '}
 						<em className='date'>
-							{months} {years}
+							{months} {years} {work.description}
 						</em>
 					</p>
-					<p>{work.description}</p>
 				</div>
 			);
 		});
