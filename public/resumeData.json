@@ -34,7 +34,7 @@
 			},
 			{
 				"name": "github",
-				"url": "https://github.com/svhrkumar544",
+				"url": "https://github.com/Svhrkumar",
 				"className": "fa fa-github"
 			}
 		]
@@ -120,6 +120,12 @@
 	},
 	"portfolio": {
 		"projects": [
+			{
+				"title": "Express Cart (MERN Stack) ",
+				"category": "This is MERN stack Application",
+				"image": "expresscart.jpg",
+				"url": "https://expresscart-app.herokuapp.com/"
+			},
 			{
 				"title": "RK Pixels",
 				"category": "My Photography portofolio built with ReactJS",
