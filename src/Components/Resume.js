@@ -29,6 +29,7 @@ const Resume = (props) => {
 				</div>
 			);
 		});
+
 		var work = props.data.work.map(function (work) {
 			return (
 				<div key={work.company}>
@@ -36,10 +37,7 @@ const Resume = (props) => {
 					<p className='info'>
 						{work.title}
 						<br />
-						<span>&bull;</span>{' '}
-						<em className='date'>
-							{months} {years} {work.description}
-						</em>
+						<span>&bull;</span> <em className='date'>{work.years}</em>
 					</p>
 				</div>
 			);
