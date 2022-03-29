@@ -38,6 +38,9 @@ const Resume = (props) => {
 						{work.title}
 						<br />
 						<span>&bull;</span> <em className='date'>{work.years}</em>
+						<br />
+						<span>&bull;</span>
+						<em>{work.description}</em>
 					</p>
 				</div>
 			);
