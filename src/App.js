@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ReactGA from 'react-ga';
 import $ from 'jquery';
 import './App.css';
 import Header from './Components/Header';
@@ -38,7 +37,7 @@ const App = () => {
 	return (
 		<div className='App'>
 			<Header data={state.resumeData.main} />
-			
+
 			<About data={state.resumeData.main} />
 			<Resume data={state.resumeData.resume} />
 			<Portfolio data={state.resumeData.portfolio} />
