@@ -1,17 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import aditya from '../images/aditya.png';
+import React from 'react';
+// import aditya from '../images/aditya.png';
 const Resume = (props) => {
-	const [months, setMonths] = useState();
-	const [years, setYears] = useState();
 	// const date = new Date();
-	const date = new Date(); // 2009-11-10
-	const month = date.toLocaleString('default', { month: 'long' });
-	const year = date.getFullYear();
 
-	useEffect(() => {
-		setMonths(month);
-		setYears(year);
-	}, [month, year]);
 	if (props.data) {
 		var skillmessage = props.data.skillmessage;
 		var education = props.data.education.map(function (education) {
