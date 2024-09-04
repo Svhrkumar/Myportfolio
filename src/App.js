@@ -6,7 +6,6 @@ import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
 import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
 import Portfolio from './Components/Portfolio';
 
 const App = () => {
@@ -22,7 +21,7 @@ const App = () => {
 			cache: false,
 			success: function (data) {
 				setState({ resumeData: data });
-			}.bind(this),
+			},
 			error: function (xhr, status, err) {
 				console.log(err);
 				alert(err);
@@ -37,11 +36,9 @@ const App = () => {
 	return (
 		<div className='App'>
 			<Header data={state.resumeData.main} />
-
 			<About data={state.resumeData.main} />
 			<Resume data={state.resumeData.resume} />
 			<Portfolio data={state.resumeData.portfolio} />
-
 			<Contact data={state.resumeData.main} />
 			<Footer data={state.resumeData.main} />
 		</div>
